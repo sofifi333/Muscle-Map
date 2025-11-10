@@ -78,15 +78,10 @@ body::-webkit-scrollbar {
   overflow-wrap: anywhere;
 }
 
-.chest {
-  font-size: 60px;
-  grid-column: 2;
-  grid-row: 3;
-}
-
-.shoulders {
+.legs {
   display: flex;
   font-size: 60px;
+  grid-column: 2;
   align-self: center;
   background-color: burlywood;
   width: 100%;
@@ -99,4 +94,14 @@ body::-webkit-scrollbar {
 
 .button {
   background-color: rgb(165, 97, 97);
+}
+
+.exercisepage {
+  background-color: pink;
+}
+
+.linkButton {
+  cursor: pointer;
+  text-decoration: none;
+  color: black;
 }

@@ -1,8 +1,7 @@
-import "./App.css"; // uses css file for styling
-// import Box from "./components/Box.jsx"; // import Box fn from box.jsx
-import Banner from "./components/Banner.jsx";
-import NavBar from "./components/NavBar.jsx";
-import Grid from "./components/Grid.jsx";
+import { createBrowserRouter, RouterProvider } from "react-router";
+// import ReactDOM from "react-dom/client";
+import Home from "./components/pages/Home.jsx";
+import Biceps from "./components/pages/Biceps.jsx";
 
 // App is the entire app -> used as a component in main.jsx (uses this as a router)
 /*
@@ -13,13 +12,17 @@ import Grid from "./components/Grid.jsx";
 */
 // <> </> -- react fragment, if u wanna be DIFFERENT and not use a div
 function App() {
-  return (
-    <div>
-      <NavBar></NavBar>
-      <Banner></Banner>
-      <Grid></Grid>
-    </div>
-  );
+  let router = createBrowserRouter([
+    {
+      path: "/",
+      Component: Home,
+    },
+    {
+      path: "/Biceps",
+      Component: Biceps,
+    },
+  ]);
+  return <RouterProvider router={router} />;
 }
 
 export default App; // App.jsx is acting as a component -- the component is a whole page (in this case) - we import it
