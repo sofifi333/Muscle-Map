@@ -7,10 +7,8 @@ import Footer from "../Footer.jsx";
 export default function Home() {
   return (
     <div>
-      <NavBar></NavBar>
       <Banner></Banner>
       <Grid></Grid>
-      <Footer></Footer>
     </div>
   );
 }

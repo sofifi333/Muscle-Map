@@ -1,8 +1,10 @@
-import { createBrowserRouter, RouterProvider } from "react-router";
+// import { createBrowserRouter, RouterProvider } from "react-router";
 // import ReactDOM from "react-dom/client";
-import Home from "./components/pages/Home.jsx";
-import Biceps from "./components/pages/Biceps.jsx";
-
+// import Home from "./components/pages/Home.jsx";
+// import Biceps from "./components/pages/Biceps.jsx";
+import NavBar from "./components/NavBar.jsx";
+import Footer from "./components/Footer.jsx";
+import Routes from "./components/Routes.jsx";
 // App is the entire app -> used as a component in main.jsx (uses this as a router)
 /*
 1.) Banner.jsx (Navbar Or Banner Hot guy flexing) <- (how to make navbar/banner google)
@@ -12,17 +14,13 @@ import Biceps from "./components/pages/Biceps.jsx";
 */
 // <> </> -- react fragment, if u wanna be DIFFERENT and not use a div
 function App() {
-  let router = createBrowserRouter([
-    {
-      path: "/",
-      Component: Home,
-    },
-    {
-      path: "/Biceps",
-      Component: Biceps,
-    },
-  ]);
-  return <RouterProvider router={router} />;
+  return (
+    <>
+      <NavBar></NavBar>
+      <Routes></Routes>
+      <Footer></Footer>
+    </>
+  );
 }
 
 export default App; // App.jsx is acting as a component -- the component is a whole page (in this case) - we import it
