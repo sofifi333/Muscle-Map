@@ -5,6 +5,7 @@
 import NavBar from "./components/NavBar.jsx";
 import Footer from "./components/Footer.jsx";
 import Routes from "./components/Routes.jsx";
+
 // App is the entire app -> used as a component in main.jsx (uses this as a router)
 /*
 1.) Banner.jsx (Navbar Or Banner Hot guy flexing) <- (how to make navbar/banner google)
@@ -16,9 +17,10 @@ import Routes from "./components/Routes.jsx";
 function App() {
   return (
     <>
-      <NavBar></NavBar>
-      <Routes></Routes>
-      <Footer></Footer>
+      <Routes>
+        <NavBar></NavBar>
+        <Footer></Footer>
+      </Routes>
     </>
   );
 }

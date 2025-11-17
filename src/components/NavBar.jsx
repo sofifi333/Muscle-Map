@@ -1,6 +1,7 @@
 import "./Components.css";
-import Button from "./Button.jsx";
+
 import logo from "../assets/arm.png";
+import { Link } from "react-router-dom";
 
 export default function NavBar() {
   return (
@@ -9,12 +10,9 @@ export default function NavBar() {
         <img src={logo} />
       </section>
       <section class="header-links">
-        <button>
-          <p>Home</p>
-        </button>
-
-        <p>Exercises</p>
-        <p>About</p>
+        <Link className="linkButton" to="/Home">
+          Home
+        </Link>
       </section>
     </nav>
   );

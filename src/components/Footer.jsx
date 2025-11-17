@@ -4,7 +4,6 @@ import "./Components.css";
 export default function Footer() {
   return (
     <div className="footer">
-      <p>This is the footer</p>
       <p id="contact">Github & Discord: @Sofifi333</p>
     </div>
   );
