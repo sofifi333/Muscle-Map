@@ -1,7 +1,18 @@
 import "../Components.css";
 import ExercisePage from "../ExercisePage";
 import img from "../../assets/bicep-flex.png";
+import React, { useEffect } from "react";
+
 export default function Biceps() {
+  // 1. Call useEffect
+  useEffect(() => {
+    // 2. The side effect: changing the browser title
+    document.title = "Biceps - The ULTIMATE Pump";
+
+    // 3. The empty dependency array: means this runs ONLY once
+    //    after the component first renders (mounts).
+  }, []);
+
   let muscleDescription =
     "The biceps brachii, commonly known as the biceps, is a large, two-headed muscle located on the front of the upper arm between the shoulder and the elbow. Its primary function is to flex the elbow (pull the forearm toward the shoulder, as in a bicep curl) and supinate the forearm (rotate the forearm outward, turning the palm up). The muscle is composed of a long head and a short head, which originate at different points on the shoulder blade but join together to form a single muscle belly before inserting near the elbow. This dual structure allows the biceps to contribute to movements at both the shoulder and the elbow joints.";
   let whyExercise =

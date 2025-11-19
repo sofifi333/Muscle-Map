@@ -2,9 +2,11 @@
 // import ReactDOM from "react-dom/client";
 // import Home from "./components/pages/Home.jsx";
 // import Biceps from "./components/pages/Biceps.jsx";
+import { Outlet } from "react-router-dom";
 import NavBar from "./components/NavBar.jsx";
 import Footer from "./components/Footer.jsx";
 import Routes from "./components/Routes.jsx";
+import { RouterProvider } from "react-router-dom";
 
 // App is the entire app -> used as a component in main.jsx (uses this as a router)
 /*
@@ -17,10 +19,12 @@ import Routes from "./components/Routes.jsx";
 function App() {
   return (
     <>
-      <Routes>
-        <NavBar></NavBar>
-        <Footer></Footer>
-      </Routes>
+      <NavBar />
+
+      {/* This is where your pages show up */}
+      <Outlet />
+
+      <Footer />
     </>
   );
 }

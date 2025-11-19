@@ -5,12 +5,12 @@ import { Link } from "react-router-dom";
 
 export default function NavBar() {
   return (
-    <nav class="nav">
+    <nav className="nav">
       <section>
         <img src={logo} />
       </section>
-      <section class="header-links">
-        <Link className="linkButton" to="/Home">
+      <section className="header-links">
+        <Link className="linkButton" to="/home">
           Home
         </Link>
       </section>

@@ -28,16 +28,17 @@
 
   padding-right: 40px; /* borders/around only*/
 }
-.nav p {
+.nav {
   /* selects specific element in class */
   color: black;
-  font-size: 20px;
+  font-size: 25px;
 }
 
 .nav img {
   width: 15%;
   justify-self: flex-start;
   padding-left: 20px;
+  padding-top: 10px;
 }
 
 .header-links {
@@ -46,30 +47,71 @@
   align-items: center;
 }
 
+/* --- NavBar Button Styles ONLY --- */
+
+/* This targets .linkButton ONLY if it is inside .header-links */
+.header-links .linkButton {
+  color: #c435a3; /* Dark Pink text to match theme */
+  padding: 10px 25px; /* Make it look like a button */
+  border-radius: 30px; /* Round edges */
+  font-weight: bold;
+  transition: all 0.3s ease; /* Smooth animation */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Hover effect */
+.header-links .linkButton:hover {
+  background-color: #ffabf5; /* Lighter pink on hover */
+  transform: translateY(-2px); /* Move up slightly */
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+  color: white;
+}
+
+/* banner styling */
+
 .banner {
-  background-image: url("../assets/goggins-log.avif");
-
+  position: relative;
   height: 40vh;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: top;
+  overflow: hidden;
 }
 
-.banner h1 {
-  color: whitesmoke;
-  font-size: 100px;
+.banner-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* or try 'contain' for more zoomed out */
 }
+
+.banner-text {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  /* font-size, color, etc. */
+}
+
 html {
   /* scorlling feature*/
   overflow: auto;
 }
 
+/* turn off scroll bar*/
 body::-webkit-scrollbar {
   display: none;
 }
 
+.outer-grid {
+  background-color: rgb(255, 187, 198);
+  margin: none;
+  display: flex;
+}
+
 .grid-container {
+  flex-grow: 1;
   display: grid;
+  border-radius: 20px;
+  border: auto;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr);
   margin-top: 100px;
@@ -77,17 +119,23 @@ body::-webkit-scrollbar {
   column-gap: 50px;
   row-gap: 50px;
   margin-right: 50px;
-  border: 1px solid brown;
   margin-left: 50px;
   text-align: center;
   margin-bottom: 100px;
+  background: #fcc7f4;
+  background: radial-gradient(
+    circle,
+    rgba(252, 199, 244, 1) 0%,
+    rgba(219, 111, 227, 1) 84%,
+    rgba(196, 53, 163, 1) 100%
+  );
 }
 
 .grid-item {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: burlywood;
+
   text-align: center;
   width: 100%;
   height: 200px;
@@ -95,18 +143,18 @@ body::-webkit-scrollbar {
   overflow-wrap: anywhere;
 }
 
+/* Add this to Components.css */
+.center-item {
+  grid-column: 2; /* Forces this item into the middle column */
+}
+
 .legs {
   display: flex; /* makes children of elm go side by side - allows u to use justifycontent, align-items */
   font-size: 60px;
-  grid-column: 2;
-  align-self: center;
-  background-color: burlywood;
   width: 100%;
   height: 200px;
   text-align: center;
-  align-items: center;
   justify-content: center;
-  justify-self: right;
 }
 
 .button {
