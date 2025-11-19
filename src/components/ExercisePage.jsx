@@ -1,7 +1,5 @@
 import "./Components.css";
 
-//have a button take me somewhere and then have it like change color -- use State
-
 export default function ExercisePage({
   muscleGroup,
   muscleDescription,
