@@ -7,7 +7,7 @@ export default function Legs() {
   // 1. Call useEffect
   useEffect(() => {
     // 2. The side effect: changing the browser title
-    document.title = "NO CHICKEN LEGS ALLOWED";
+    document.title = "NO CHICKEN LEGS";
 
     // 3. The empty dependency array: means this runs ONLY once
     //    after the component first renders (mounts).

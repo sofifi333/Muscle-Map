@@ -7,7 +7,7 @@ export default function Biceps() {
   // 1. Call useEffect
   useEffect(() => {
     // 2. The side effect: changing the browser title
-    document.title = "Biceps - The ULTIMATE Pump";
+    document.title = "BIGGA BICEPS";
 
     // 3. The empty dependency array: means this runs ONLY once
     //    after the component first renders (mounts).

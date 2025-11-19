@@ -16,7 +16,8 @@ import Shoulders from "./pages/Shoulders.jsx";
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <App />, // App is your layout (NavBar + Outlet + Footer)
+    element: <App />, // App is my layout (NavBar + Outlet + Footer) - the children are rendered based on the route
+    // by having app be the layout, navbar and footer show up with each switch in page
     children: [
       { index: true, element: <Home /> }, // default route "/"
       { path: "home", element: <Home /> },

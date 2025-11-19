@@ -47,7 +47,7 @@
   align-items: center;
 }
 
-/* --- NavBar Button Styles ONLY --- */
+/*  NavBar Button Styles ONLY  */
 
 /* This targets .linkButton ONLY if it is inside .header-links */
 .header-links .linkButton {
@@ -101,6 +101,7 @@ body::-webkit-scrollbar {
   display: none;
 }
 
+/* home page grid */
 .outer-grid {
   background-color: rgb(255, 187, 198);
   margin: none;
@@ -143,7 +144,7 @@ body::-webkit-scrollbar {
   overflow-wrap: anywhere;
 }
 
-/* Add this to Components.css */
+/* legs centering in the middle of grid */
 .center-item {
   grid-column: 2; /* Forces this item into the middle column */
 }
@@ -167,6 +168,7 @@ body::-webkit-scrollbar {
   background-color: rgb(255, 210, 253);
 }
 
+/* top section of each exercise page */
 .exercise-page h1 {
   display: flex;
   font-size: 50px;

@@ -6,7 +6,7 @@ import img from "../../assets/core.jpeg";
 export default function Core() {
   useEffect(() => {
     // 2. The side effect: changing the browser title
-    document.title = "Let's get this Core BURNIN";
+    document.title = "CRAZY CORE";
 
     // 3. The empty dependency array: means this runs ONLY once
     //    after the component first renders (mounts).

@@ -5,7 +5,6 @@ export default function Grid() {
   return (
     <div className="outer-grid">
       <div className="grid-container">
-        {/* <div className="grid-item">{/* <Exercises name={"Biceps"} /> </div> */}
         <Link className="linkButton" to="/chest">
           <div className="grid-item">Chest</div>
         </Link>

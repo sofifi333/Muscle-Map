@@ -6,7 +6,6 @@ export default function Home() {
   useEffect(() => {
     // 2. The side effect: changing the browser title
     document.title = "WE START NOW!";
-
     // 3. The empty dependency array: means this runs ONLY once
     //    after the component first renders (mounts).
   }, []);
