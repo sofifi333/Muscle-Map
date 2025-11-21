@@ -54,6 +54,7 @@ Built with an emphasis on **component reusability**, **clean CSS layout**, and *
 ---
 
 ## 📁 Project Structure
+
 src/
 ├── components/ → shared UI components
 ├── pages/ → individual muscle group pages
