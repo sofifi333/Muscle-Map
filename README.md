@@ -55,10 +55,11 @@ Built with an emphasis on **component reusability**, **clean CSS layout**, and *
 
 ## 📁 Project Structure
 
+```text
 src/
-├── components/ → shared UI components
-├── pages/ → individual muscle group pages
-├── assets/ → images / icons
+├── components/      → shared UI components
+├── pages/           → individual muscle group pages
+├── assets/          → images / icons
 ├── App.jsx
 ├── Routes.jsx
 └── main.jsx
