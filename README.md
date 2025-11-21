@@ -37,7 +37,7 @@ Built with an emphasis on **component reusability**, **clean CSS layout**, and *
 - Bullet-style lists with cues and images
 - Easily expandable for complex groups (legs, abs, etc.)
 
-# peep the browser titles to see some implementation of useEffect ;)
+ peep the browser titles to see some implementation of useEffect ;)
 
 ---
 
