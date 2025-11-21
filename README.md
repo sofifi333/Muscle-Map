@@ -64,7 +64,8 @@ src/
 ├── Routes.jsx
 └── main.jsx
 
----
+```
+
 
 ## 🖥️ Run Locally
 
@@ -73,4 +74,23 @@ git clone https://github.com/your-username/Muscle-Map
 cd Muscle-Map
 npm install
 npm run dev
+
+```
+
+## 🌐 Deployment
+
+This project is deployed with **Vercel**.  
+Every push to `main` triggers an automatic redeploy.
+
+**Live Site:** https://muscle-map-og.vercel.app/
+
+---
+
+## 🔮 Future Improvements
+
+- Convert muscle/exercise info into JSON for full dynamic rendering  
+- Add page transitions + micro-interactions  
+- Add global exercise search  
+- Improve mobile responsiveness  
+- Add dark mode  
 
