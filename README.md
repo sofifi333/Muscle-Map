@@ -1,7 +1,7 @@
 # 💪 Muscle Map  
 ### *An interactive visual guide to human muscles + targeted exercises*  
 
-[Live Demo:](https://muscle-map-og.vercel.app/)
+[Click Me!](https://muscle-map-og.vercel.app/)
 
 ---
 
